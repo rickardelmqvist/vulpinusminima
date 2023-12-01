@@ -1,0 +1,727 @@
+html, body { 
+    height: 100%;
+    font-family: 'Comfortaa', cursive;
+    left:0px;
+    top:0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f6f7f2;
+}
+body{
+    z-index: -1;
+}
+
+.view {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.workarea {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 50%;
+  /*whatever width you want*/
+}
+.col1{
+    width: 100%;
+    float: left;
+}
+.col2{
+    width: 100%;
+    float: left;
+}
+.title, .logo, .content{
+    margin: 5px;
+    margin: 5px;
+}
+title, .sub_title, .logo, .content{
+    width: 100%;
+}
+.title, .sub_title{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;  
+}
+.title{
+    font-size: 2em;
+}
+.logo{
+    background-image: url("graphics/fox2.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:contain; 
+    height: 150px; 
+}
+
+.div_button{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    text-align: center;
+    vertical-align: middle;
+    opacity: 0.8;
+    background-color:beige;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 230px;
+}
+.input_error {
+    border: 1px solid red;
+}
+
+.feedback{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    min-height: 2em;
+    text-align: center;
+    font-size: 14px;
+}
+.center{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 2em;
+    max-width: 400px;
+    width: 80%
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+
+.game {
+    z-index: 0;
+    float: left;
+    background-color: red;  
+}
+.user {
+    z-index: 100;
+    float: left;
+    background-color: blue;
+    
+}
+.wallet {
+    z-index: 200;
+    float: left;
+    background-color: green;
+}
+.login {
+    z-index: 300;
+    float: left;
+}
+.resetpw{
+    z-index: 400;
+    float: left;
+    background-color: lightcoral;
+}
+.register{
+    z-index: 500;
+    float: left;
+    background-color: #f6f7f2;
+}
+.authenticate{
+    z-index: 600;
+    float: left;
+    background-color: #f6f7f2;
+}
+#blocker{
+    z-index: 900;
+    float: left;
+    background: white;
+    width:100%;
+    height: 110%;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    overflow: hidden;
+    display: none;
+}
+#popup{
+    z-index: 900;
+    float: left;
+    width:100%;
+    height: 100%;
+    position:absolute;
+    display: none;
+}
+.popup_workarea{
+    z-index: 900;
+    background: white;
+    margin: auto;
+    width: 50%;
+    max-width: 400px;
+    min-height: 00px;
+    border: 1px solid black;
+    position: relative;
+    top: 20%;
+}
+
+.popup_workarea .title{
+    background: #555;
+    color: #f1f1f1;
+    margin: 0px;
+    padding: 0px;
+}
+#popup_textarea{
+    padding: 5px;
+}
+#do_popup_ok, #do_popup_cancel{
+    width: 80%;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+
+.login table, 
+.register table, 
+.resetpw table, 
+.authenticate table,
+.wallet table
+{
+    position: static;
+    margin: auto;
+    padding: 1px;
+}
+.login table div,
+.register table div, 
+.resetpw table div, 
+.authenticate table div,
+.wallet table div
+{
+    margin: 0 auto;
+    width: 230px;
+    
+    position: static;
+    margin: auto;
+    font-size: 1.5em;
+
+}
+
+input{
+    margin: 0 auto;
+    width: 230px;
+    margin: auto;
+    font-size: 1.5em;
+}
+input[type=radio]{
+    width: 20px;
+}
+
+#do_login, 
+#do_register, 
+#do_request_reset,
+#do_authenticate,
+#do_update_balance,
+#do_popup_ok
+{
+    background-color: rosybrown;
+     border: 1px solid black;
+}
+#do_login:hover, 
+#do_register:hover,
+#do_request_reset:hover,
+#do_authenticate:hover,
+#do_update_balance:hover,
+#do_popup_ok:hover
+{
+    background-color: saddlebrown;
+}
+
+/***********WALLET VIEW******************/
+
+
+
+/***********TOP MENU******************/
+
+
+.topmenu {
+    background: #555;
+    color: #f1f1f1;
+    width:100vw;  
+    height: 60px;
+    
+    display: table;
+}
+.topmenu div{
+    /*position: relative;
+    float: left;
+    */
+}
+.topmenu .left{
+    display: table-cell;
+    position: static;
+    height: 50%;
+    
+    display: static;
+    vertical-align: middle;
+    padding-left:20px;
+}
+.topmenu .right{
+    display: table-cell;
+    position: static;
+    min-width: 70px;
+    height: 50%;
+    
+    display: static;
+    vertical-align: middle;
+}
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left:0;
+
+}
+.menuitem{
+    
+    height: 30px;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.menubtn{
+    width: 30px;
+    float: right;
+    margin-right: 20px;
+}
+
+.show_menu{
+    background-image: url("graphics/menu.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:contain; 
+}
+
+
+
+.left .menuitem{
+ float: left;   
+}
+
+.slideMenu{
+    position:absolute;
+    float: right;
+    z-index: 800;
+    width: 400px;
+    top: 0px;
+    max-width: 100%;
+    min-height: 100%;
+    padding-top: 10px;
+    
+    background: #555;
+    color: #f1f1f1;
+    border-left: 1px solid white;
+    overflow: hidden;
+}
+.slideMenu div{
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: default;
+}
+.btn{
+    text-align: center !important;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+   
+    background-color: saddlebrown;
+    cursor: pointer !important;
+}
+.btn:hover{
+    background-color: white;
+}
+/*****************************/
+
+
+.game .content{
+    width:100%;
+    /*border: 1px solid red;*/
+    top: 50px;
+}
+
+@media screen and (max-width : 500px) 
+{
+    /*
+    .topmenu {
+        height: 120px;
+    }
+    */
+    .topmenu .left{
+        width: 80%;
+        float:none;
+        /*
+        position: relative;
+        display: block;
+        */
+        
+    }
+    .topmenu .right{
+        float:none;
+        width: 15%;
+
+    }
+}
+
+
+
+
+/* this is for handheld phones in landscape */
+@media screen 
+    and (orientation: landscape) 
+    and (max-device-height : 500px) 
+{
+    .view{
+            background-color: blue;
+    }
+    .col1{
+        width: 45%;
+        height: 100%;
+        margin-left:10px; 
+    }
+    .col2{
+        width: 45%;
+    }
+    .workarea {
+        height: 90%;
+    }
+    .col1 .title, .sub_title{
+        height:10%;
+    }
+    .title{
+        font-size:2em;
+        width: 100%;
+    } 
+}
+/* TIC GAME STUFF */
+.content{
+   /*border: 1px solid red;*/
+    position: static;
+}
+.result{
+    border:1px solid blue;
+    float: left;
+    padding: 20px;
+}
+.modifiers{
+    border:1px solid green;
+    width:40%;
+    float: left;
+}
+#savers_containter{
+    width: 0px;
+    height: 30px;
+    background-image:url(graphics/star_empty.png); 
+    background-repeat: repeat-x;
+    background-position: left;
+    background-size: 30px 30px;
+}
+.savers{
+    width: 0px;
+    height: 30px;
+    background-image:url(graphics/star_filled.png); 
+    background-repeat: repeat-x;
+    background-repeat: repeat-x;
+    background-position: left;
+    background-size: 30px 30px;
+}
+/*
+.saver{
+    width: 0px;
+    height: 30px;
+    background-image:url(graphics/star_yell.png); 
+    background-position: left; 
+    background-repeat: no-repeat; 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+*/
+.active{
+    background-color: yellow
+}
+.gameBalance{
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    float:left;
+}
+.selOperator{
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    float:left;
+    margin-top:30px;
+    margin-left:30px;
+}
+.selValue{
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    float:left;
+    margin:30px;
+    margin-top:30px;
+    margin-left:30px;
+}
+.newResult{
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    float:left;
+}
+.mul{
+    
+}
+.div{
+    
+}
+.add{
+    
+}
+.sub{
+    
+}
+
+.tbtn{
+    width: 30px;
+    height: 30px;
+    float:left;
+    cursor: default;
+    border:1px solid white;
+}
+.slider{
+    border: 1px dashed grey;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    float: none;
+    position: absolute;
+}
+.op
+{
+    background-color: white;
+}
+.va
+{
+     background-color: green;
+}
+.active{
+    border:1px solid red;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 500px) 
+{    
+    .result{
+        width: 100%;
+    }
+    .modifiers{
+        width: 100%;
+    }
+}
+
+/* MAP GENERATOR STUFF */
+.yrow{
+    position: static;
+    height: 30px;
+    width: 7600px;
+}
+.xcell{
+    position: static;
+    float: left;        
+    width: 30px;
+    height: 30px;
+}
+
+.paint_button{
+    width: 50px;
+    height: 50px !important;
+    border: 1px solid black;
+    float: left;
+    margin: 5px;
+    color:black;
+    text-align: center;
+    
+}
+.save_button{
+    background-color:red; 
+    width: 50px;
+    height: 50px !important;
+    border: 1px solid black;
+    float: left;
+    margin: 5px;
+    color:black;
+    text-align: center;
+}
+.rubber{
+    background-color:white;
+}
+.save{
+    
+}
+.m{
+    background-color:black;
+    color:white;
+}
+.w{
+    background-color:blue;
+}
+.f{
+    background-color:green;
+}
+.g{
+    background-color:lawngreen;
+}
+.s{
+    background-color:antiquewhite;
+}
+
+.selected{
+    border:1px solid red;
+}
+
+
+
+
+
+
+
+
+/*
+html, body { height: 100%; }
+
+body{
+    background-image:url(graphics/bg1jpg.jpg);   
+}
+.view {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-image:url(graphics/bg1jpg.jpg); 
+    
+    font-family: 'Pirata One', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+.view div{
+    position:static;  
+}
+.view h1{
+    font-family: 'Pirata One', cursive;
+    text-align: center;
+    font-size: 5em;
+    padding: 0px;
+    width: 75%;
+    margin: 0 auto;
+
+}
+.workarea{
+    margin: auto;
+    width: 100%;
+    height: 70vh;
+    min-height: 200px;
+    min-width: 200px;
+}
+.div_button{
+    font-family: 'Pirata One', cursive;
+    text-align: center;
+    display: table-cell; 
+    vertical-align: middle;
+    opacity: 0.8;
+    background-color:beige;
+    cursor: pointer;
+    font-size: 1.5em;
+    
+}
+.div_button:hover{
+    background-color: saddlebrown;
+}
+
+
+
+.feedback{
+    position: relative;
+    float: left;
+    height:  2em;
+    width: 150px;
+    
+}
+.login_feedback{
+    text-align: center;
+}
+
+
+.login table{
+    position: static;
+    width: 50%;
+    
+    margin: auto;
+    padding: 1px;
+}
+
+.login table div, input{
+    margin: 0 auto;
+    width: 100%;
+    
+    position: static;
+    margin: auto;
+    font-size: 1.5em;
+
+}
+
+#do_login{
+    background-color: rosybrown;
+     border: 1px solid black;
+}
+#do_login:hover{
+    background-color: saddlebrown;
+}
+
+
+
+
+
+.input_error {
+    border: 1px solid red;
+}
+
+.login_button {
+    position: relative;
+    float: left;
+}
+
+
+.value_button {
+    width:  30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+.number{
+    background-color: aqua;
+}
+.operator
+{
+    background-color: antiquewhite;
+}
+*/

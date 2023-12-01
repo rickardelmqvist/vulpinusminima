@@ -14,14 +14,14 @@ if('elmqvist.org' == $_SERVER['SERVER_NAME'] ||
 {
     define("DB_SERVERNAME","mysql33.unoeuro.com");
     define("DB_USERNAME","elmqvist_org");
-    define("DB_PASSWORD","fe2c43pb");
+    define("DB_PASSWORD","xxxxxx");
     define("DB_NAME","elmqvist_org_db_volupinusminima");
 }
 else
 {
     define("DB_SERVERNAME","mysql-server");
     define("DB_USERNAME","elmqvist_org");
-    define("DB_PASSWORD","fe2c43pb");
+    define("DB_PASSWORD","xxxxxxx");
     define("DB_NAME","elmqvist_org_db_volupinusminima");
 }
 ?>

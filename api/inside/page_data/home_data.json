@@ -1,0 +1,92 @@
+[
+    [
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"<div class=\"logo\"></div>"
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"<div class=\"sub_title\">Vulpinus a vita non segnes efficiamini</div>" 
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"<br /><div class=\"title\">{name}</div><br />"
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"<div class=\"sub_title\">Vi vill välkomna dig in i den illustra sammanslutningen</div><br />" 
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"<br /><div class=\"title\">Vulpinus Minima</div><br />" 
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"<br /><div class=\"sub_title\">Du ombeds därför infinna dig ...</div><br />" 
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"
+                <div class=\"sub_title\">{eventDate} på</div>
+                <div class=\"sub_title\">{eventLocation}</div><br />
+            " 
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"
+                <div class=\"sub_title\">Klädsel: Kavaj med fördel smoking U.O.</div>
+                <div class=\"sub_title\">Medtag skor för utomhusbruk.</div>
+                <div class=\"sub_title\">Glöm ej dina rävöron.</div><br />
+                <div class=\"sub_title\">O.S.A. {eventOSA}</div><br />  
+                <div class=\"sub_title\">{eventDetails}</div><br />  
+            " 
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"
+            <div class=\"feedback\">
+                <table  style=\"width: 100%;\">
+                    <tr>
+                        <td style=\"width: 70%; text-align:right;\">Ja, jag deltar.</td>
+                        <td style=\"width: 30%; text-align:left;\">
+                            <input type=\"radio\" id=\"attend\" name=\"attend\" value=\"yes\" {check_yes}>
+                        </td>
+                    </tr>            
+                    <tr>
+                        <td style=\"width: 70%; text-align:right;\">Nej, jag deltar inte.</td>
+                        <td style=\"width: 30%; text-align:left;\">
+                            <input type=\"radio\" id=\"attend\" name=\"attend\" value=\"no\" {check_no}>
+                        </td>
+                    </tr>   
+                </table>
+            </div>"
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 1000000,
+            "html":"<br />
+                <div class=\"sub_title\" style=\"font-size:12px;\">Eventuella allergier torde klargöras via mail till vulpinusminima@gmail.com</div>
+            " 
+        }
+
+    ]
+]

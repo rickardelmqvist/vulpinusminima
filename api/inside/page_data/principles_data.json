@@ -1,0 +1,37 @@
+[
+    [
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"<div class=\"logo\"></div>"
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"<br /><div class=\"title\">Vulpinus Minima</div><br />" 
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 500,
+            "html":"<div class=\"sub_title\">Principer</div><br /><br />" 
+        },
+        {
+            "animation": "fade",
+            "speed": 1000,
+            "wait": 1000000000,
+            "html":"
+                <div class=\"center\" style=\"text-align:center;\">
+                <p>1. Minirävens och punschrullens dag firas med fördel den lördag som är närmast den den 7 mars, om möjligt tillsammans med andra minirävar, främst i sinnesvärlden annars i tankevärlden.</p>
+                <p>2. Ingen vet vad miniräven säger. Ingen.</p>
+                <p>3. En miniräv har aldrig riktigt tråkigt i glada rävars lag och pryder gärna sin hjässa med vackra spetsiga rävöron. Minirävar delar, förutom en stor förkärlek för punchrullar också en glädje i illustra och listiga lekar och spratt.</p>
+                <p>4. En liten räv vet att en god historia sällan är sann och hen räds inte att vidlyftigt brodera sina berättelser på det att den bli både mer intressant och spännande.</p>
+                <p>5. När fler än fem minirävar träffas bör minst en punschrulle avnjutas att hedra den perfekta punchrullens minne.</p>
+                <p>6. En räv gör ingen glad. När rävar möts må fem minirävar medbringa en valp som under kvällen erhåller sina spetsiga öron.</p>
+                </div><br />
+                " 
+        }
+    ]
+]
